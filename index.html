@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Shopping App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+
+    <!-- Home Screen -->
+    <section id="home-screen" class="screen active">
+      <h1>The Shopping App</h1>
+
+      <div class="panel">
+        <h2>Today</h2>
+        <button id="btn-usual-shop">My Usual Shop</button>
+        <button id="btn-view-list">View Today’s List</button>
+        <button id="btn-start-trip">Start Trip</button>
+        <button id="btn-stop-trip">Stop Trip</button>
+      </div>
+
+      <div class="panel">
+        <h2>Quick Add</h2>
+        <input type="text" id="quick-add-input" placeholder="Add item quickly">
+        <button id="quick-add-btn">Add</button>
+      </div>
+
+      <div class="panel">
+        <h2>Forgotten Yesterday</h2>
+        <ul id="forgotten-list"></ul>
+      </div>
+
+      <div class="panel">
+        <h2>Previous Lists</h2>
+        <button id="btn-previous-lists">View Previous Lists</button>
+      </div>
+
+      <div class="panel">
+        <h2>Manage Items</h2>
+        <button id="btn-manage">Add / Change Items</button>
+      </div>
+
+      <div class="panel">
+        <h2>Trip Stats</h2>
+        <p id="stats-summary"></p>
+      </div>
+    </section>
+
+    <!-- Usual Shop / Categories -->
+    <section id="shop-screen" class="screen">
+      <h2>My Usual Shop</h2>
+      <button class="back-btn" data-target="home-screen">Back</button>
+      <div id="categories-container"></div>
+    </section>
+
+    <!-- Today’s List -->
+    <section id="list-screen" class="screen">
+      <h2>Today’s List</h2>
+      <button class="back-btn" data-target="home-screen">Back</button>
+      <ul id="today-list"></ul>
+    </section>
+
+    <!-- Trip Screen -->
+    <section id="trip-screen" class="screen">
+      <h2>Shopping Trip</h2>
+      <button class="back-btn" data-target="home-screen">Back</button>
+      <p>Trip time: <span id="trip-time">00:00</span></p>
+      <ul id="trip-list"></ul>
+    </section>
+
+    <!-- Previous Lists -->
+    <section id="previous-screen" class="screen">
+      <h2>Previous Lists</h2>
+      <button class="back-btn" data-target="home-screen">Back</button>
+      <ul id="previous-lists"></ul>
+    </section>
+
+    <!-- Manage Items -->
+    <section id="manage-screen" class="screen">
+      <h2>Manage Categories & Items</h2>
+      <button class="back-btn" data-target="home-screen">Back</button>
+
+      <div class="panel">
+        <h3>Add Category</h3>
+        <input type="text" id="new-category-name" placeholder="Category name">
+        <button id="add-category-btn">Add Category</button>
+      </div>
+
+      <div class="panel">
+        <h3>Add Item</h3>
+        <select id="category-select"></select>
+        <input type="text" id="new-item-name" placeholder="Item name">
+        <label>
+          <input type="checkbox" id="always-buy-checkbox">
+          Always Buy
+        </label>
+        <button id="add-item-btn">Add Item</button>
+      </div>
+
+      <div class="panel">
+        <h3>Existing Items</h3>
+        <div id="manage-items-container"></div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
