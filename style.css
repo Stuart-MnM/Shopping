@@ -168,6 +168,21 @@ button {
   box-shadow: 0 2px 4px rgba(0,0,0,0.12);
 }
 
+/* Categories screen layout */
+#shop-screen {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#categories-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+
 button:hover {
   background: #086b42;
 }
@@ -207,3 +222,18 @@ button.back-btn:hover {
 li button:hover {
   background: #d92c23;
 }
+
+/* Categories screen layout */
+#shop-screen {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#categories-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
