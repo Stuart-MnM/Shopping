@@ -153,14 +153,38 @@ li label {
   margin-bottom: 10px;
 }
 
-/* --- Small buttons inside lists --- */
-li button {
-  width: auto;
-  padding: 6px 10px;
-  font-size: 14px;
-  background: #ff3b30;
-  border-radius: 8px;
+/* --- Buttons (iPhone-style) --- */
+button {
+  width: 100%;
+  padding: 14px;
+  margin: 8px 0;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  background: #0a7f4f; /* emerald */
+  color: white;
+  transition: background 0.15s ease, transform 0.1s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.12);
 }
+
+button:hover {
+  background: #086b42;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+button.back-btn {
+  background: #d1d1d6;
+  color: #000;
+}
+
+button.back-btn:hover {
+  background: #bcbcc2;
+}
+
 
 /* --- Home screen layout --- */
 #home-screen {
