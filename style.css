@@ -18,9 +18,12 @@ body {
 }
 
 .screen.active {
-  display: block;
-  animation: fadeIn 0.25s ease-out;
+  display: flex;              /* This is the fix */
+  flex-direction: column;     /* Stack content top-to-bottom */
+  min-height: 100vh;          /* Fill the screen height */
+  padding: 20px;              /* Add breathing room */
 }
+
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(4px); }
