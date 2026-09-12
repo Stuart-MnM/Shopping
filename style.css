@@ -237,3 +237,18 @@ li button:hover {
   margin-top: 10px;
 }
 
+/* --- Fix the Shop Screen Layout --- */
+#shop-screen {
+  min-height: 100vh;          /* Makes the screen fill the whole phone height */
+  display: flex;              /* Enables vertical stacking */
+  flex-direction: column;     /* Stack elements top-to-bottom */
+  align-items: stretch;       /* Make elements full width */
+  padding: 20px;              /* Adds breathing room */
+}
+
+#categories-container {
+  margin-top: 20px;           /* Moves categories up under the heading */
+  display: flex;              /* Stack category blocks */
+  flex-direction: column;
+  gap: 16px;                  /* Space between category blocks */
+}
