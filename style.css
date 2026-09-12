@@ -14,20 +14,14 @@ body {
 
 /* --- Full-page screen layout --- */
 .screen {
-  display: none;          /* Hidden by default */
-  position: fixed;        /* Lock to the viewport */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;          /* Full screen height */
-  overflow-y: auto;       /* Scroll if content is long */
-  background: #f2f2f7;    /* Same background as body */
-  padding: 20px;          /* Space around content */
+  display: none;
 }
 
 .screen.active {
-  display: block;         /* Show only the active screen */
+  display: block;
+  padding: 20px;
 }
+
 
 
 
