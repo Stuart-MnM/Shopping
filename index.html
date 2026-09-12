@@ -13,13 +13,14 @@
     <section id="home-screen" class="screen active">
       <h1>The Shopping App</h1>
 
-      <div class="panel">
-        <h2>Today</h2>
-        <button id="btn-usual-shop">My Usual Shop</button>
-        <button id="btn-view-list">View Today’s List</button>
-        <button id="btn-start-trip">Start Trip</button>
-        <button id="btn-stop-trip">Stop Trip</button>
-      </div>
+<div class="panel home-actions">
+  <h2>Today</h2>
+  <button id="btn-usual-shop">My Usual Shop</button>
+  <button id="btn-view-list">View Today’s List</button>
+  <button id="btn-start-trip">Start Trip</button>
+  <button id="btn-stop-trip">Stop Trip</button>
+</div>
+
 
       <div class="panel">
         <h2>Quick Add</h2>
@@ -52,7 +53,7 @@
     <section id="shop-screen" class="screen">
       <h2>My Usual Shop</h2>
       <button class="back-btn" data-target="home-screen">Back</button>
-      <div id="categories-container"></div>
+      <div id="categories-container" class="category-block"></div>
     </section>
 
     <!-- Today’s List -->
